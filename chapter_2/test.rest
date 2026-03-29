@@ -1,0 +1,11 @@
+GET http://localhost:3000/ HTTP/1.1
+
+### Data endpoint for adding users
+POST http://localhost:3000/api/data HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30
+}
