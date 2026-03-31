@@ -11,10 +11,10 @@ db.exec(`CREATE TABLE users (
 
 db.exec(`CREATE TABLE todos (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  title TEXT NOT NULL,
+  task TEXT NOT NULL,
   completed BOOLEAN DEFAULT FALSE,
   user_id INTEGER,
-  FOREIGN KEY (user_id) REFERENCES users (id)
+  FOREIGN KEY (user_id) REFERENCES users(id)
 )`)
 
 export default db;
